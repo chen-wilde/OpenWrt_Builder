@@ -17,3 +17,7 @@ cd feeds/packages/net
 echo "$FRPC_OP" > frp/files/frpc.config
 sed -i "s/enabled '0'/enabled '1'/" banip/files/banip.conf
 sed -i "s/enabled '0'/enabled '1'/;s/token ''/token '$TUNX86_TOKEN'/" cloudflared/files/cloudflared.config
+
+cd ..
+curl -sLO https://patch-diff.githubusercontent.com/raw/openwrt/packages/pull/30288.patch
+git apply 30288.patch
