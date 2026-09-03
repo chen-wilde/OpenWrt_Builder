@@ -16,7 +16,7 @@ on:
 
 env:
   REPO_URL: https://git.openwrt.org/openwrt/openwrt
-  REPO_BRANCH: openwrt-25.12
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/h68k.config
   DEVICE: HinLink_H68K
