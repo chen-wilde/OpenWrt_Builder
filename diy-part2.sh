@@ -17,3 +17,7 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/Router/g' package/base-files/files/bin/config_generate
+
+# Modify golang version
+ rm -rf feeds/packages/lang/golang
+ git clone https://github.com/sbwml/packages_lang_golang -b 27.x feeds/packages/lang/golang
