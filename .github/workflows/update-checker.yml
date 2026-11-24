@@ -17,13 +17,13 @@ env:
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 16 * * *
+    - cron: 0 10 * * *
 
 jobs:
   check:
     runs-on: ubuntu-latest
-
     steps:
+
     - name: Get Commit Hash
       id: getHash
       run: |
